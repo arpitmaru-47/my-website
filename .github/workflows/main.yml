@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
 
-        script:
+        script: |
           cd /var/www/html/my-website
           git pull origin main
           sudo cp -r * /var/www/html/
